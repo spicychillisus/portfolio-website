@@ -7,8 +7,7 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      
-      
+      <h1 className="text-center">test</h1>
     </main>
   );
 }
