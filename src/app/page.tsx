@@ -8,6 +8,9 @@ export default function Home() {
   return (
     <main>
       <Navbar />
+      <div className="">
+            <h1 className="uppercase font-bold text-center">all my works</h1>
+      </div>
       <Footer />
     </main>
   );

@@ -11,10 +11,10 @@ const Navbar = () => {
                 <div>
                     <ul className="hidden sm:flex">
                         <Link href="/projects">
-                            <li className="ml-10 uppercase hover:border-b text-xl">Projects</li>
+                            <li className="ml-10 lowercase hover:border-b text-xl">Projects</li>
                         </Link>
                         <Link href="/photos">
-                            <li>Photography Portfolio</li>
+                            <li className="ml-10 lowercase hover:border-b text-xl">Photography Works</li>
                         </Link>
                     </ul>
                 </div>

@@ -1,11 +1,12 @@
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 const Photos = () => {
     return (
-        <div>
+        <main>
             <Navbar />
             <h1>Photos</h1>
-        </div>
+        </main>
     )
 }
 

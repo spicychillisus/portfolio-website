@@ -2,8 +2,9 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-800">
-            <h3 className="text-bold absolute bottom-0 w-full text-center">test</h3>
+        <footer className="bg-gray-800 absolute bottom-0 w-full">
+            <h3 className="text-center lowercase">asher reyes</h3>
+            
         </footer>
     )
 }
