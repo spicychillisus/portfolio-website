@@ -9,9 +9,9 @@ const Navbar = () => {
                     <h1 className="font-bold">Asher Reyes</h1>
                 </Link>
                 <div>
-                    <ul>
+                    <ul className="hidden sm:flex">
                         <Link href="/projects">
-                            <li>Projects</li>
+                            <li className="ml-10 uppercase hover:border-b text-xl">Projects</li>
                         </Link>
                         <Link href="/photos">
                             <li>Photography Portfolio</li>
