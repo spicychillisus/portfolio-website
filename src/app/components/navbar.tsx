@@ -1,10 +1,17 @@
+"use client"; // so as to tell the server that i am using useState for client side
+
 import Link from "next/link"
 import React from "react"
 import { AiOutlineMenu } from "react-icons/ai"
-import ClientComponent from "./ClientComponent"
+import { useState } from "react"
+
 
 const Navbar = () => {
-    
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleNav = () => {
+        setIsOpen(!isOpen);
+    };
 
     return (
         <nav className="w-full h-24 shadow-xl bg-gray-800">
@@ -27,7 +34,9 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
-            <ClientComponent />
+            <div onClick={handleNav} className="md:hidden cursor-pointer pl-24">
+                <AiOutlineMenu size={25} />
+            </div>
 
         </nav>
     )

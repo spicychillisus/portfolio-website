@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+
 const Footer = () => {
     return (
         <footer className="absolute bottom-0 w-full">
