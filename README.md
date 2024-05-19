@@ -1,6 +1,7 @@
-i'm bored lol
+this is my personal portfolio website, made using nextjs
 
-once i'm done with this i'll deploy this website on a free hosting platform i ain't paying a dime
+i decided to use nextjs because i wanted to learn full stack development and 
+i believe that the nextjs framework would offer this opportunity for me to do so.
 
 this project is still work in progress
 
