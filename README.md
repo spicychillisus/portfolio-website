@@ -7,4 +7,9 @@ this project is still work in progress
 
 i'm very commited to this project, so it would be appreciated if you could give me your support as i learn a javascript framework while creating my website!
 
+to install the required dependencies, do:
+```
+npm install
+```
+
 made with nextjs: https://github.com/vercel/next.js
