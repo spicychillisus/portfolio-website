@@ -7,6 +7,8 @@ import { useState } from "react"
 
 
 const Navbar = () => {
+
+    // this section here is realted to the function of the hamburger menu on mobile devices
     const [isOpen, setIsOpen] = useState(false);
 
     const handleNav = () => {

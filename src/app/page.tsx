@@ -7,10 +7,11 @@ export default function Home() {
   return (
     <main>
       <Navbar/>
-      <div className="border border-white ml-32 mr-32 left-4">
-          <h1 className="text-4xl font-bold">all my works</h1>
-          <span className="text-lg">here in one page</span>
+      <div className="container mx-auto border">
+        {/* border property is for visualisation */}
+          <h1>test</h1>
       </div>
+      
       
       <Footer />
     </main>
