@@ -22,7 +22,7 @@ const Navbar = () => {
                 <Link href='/'>
                     <h1 className="font-bold text-lg">Asher Reyes</h1>
                 </Link>
-                <div>
+                <div className="hidden sm:flex">
                     <ul className="hidden sm:flex">
                         <Link href="/projects">
                             <li className="ml-10 lowercase hover:border-b text-base">Projects</li>
@@ -36,7 +36,8 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
-            <div onClick={handleNav} className="md:hidden cursor-pointer pl-24">
+            {/* hamburger menu */}
+            <div onClick={handleNav} className="sm:hidden cursor-pointer pl-24">
                 <AiOutlineMenu size={25} />
             </div>
 

@@ -2,18 +2,14 @@
 
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import Introduction from "./components/introduction";
+
 
 export default function Home() {
   return (
     <main>
-      <Navbar/>
-      <div className="container mx-auto border">
-        {/* border property is for visualisation */}
-          <h1>test</h1>
-      </div>
-      
-      
-      <Footer />
+      <Navbar />
+      <Introduction />
     </main>
   );
 }
