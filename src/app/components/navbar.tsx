@@ -8,15 +8,8 @@ import { useState } from "react"
 
 const Navbar = () => {
 
-    // this section here is realted to the function of the hamburger menu on mobile devices
-    const [isOpen, setIsOpen] = useState(false);
-
-    const handleNav = () => {
-        setIsOpen(!isOpen);
-    };
-
     return (
-        <nav className="w-full h-24 shadow-xl bg-gray-800">
+        <nav className="w-full h-24">
             <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
                 {/* logo */}
                 <Link href='/'>
@@ -36,11 +29,6 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
-            {/* hamburger menu */}
-            <div onClick={handleNav} className="sm:hidden cursor-pointer pl-24">
-                <AiOutlineMenu size={25} />
-            </div>
-
         </nav>
     )
 }
