@@ -8,6 +8,8 @@ import {
   Istok_Web
  } 
 from "next/font/google";
+import emailIcon from "./components/emailIcon";
+import nextIcon from "./components/nextIcon";
 
 const inter = Inter({
   weight: "500",
@@ -38,7 +40,7 @@ export default function Home() {
                 specialising in Software Development. I decided to chose this pathway as since young, I've been really curious on how software and applications
                 worked, as well as the technology and architecture behind a software and application.
               </p>
-              <h3 className="uppercase">my hobbies</h3>
+              <h3 className="uppercase text-xl font-bold">my hobbies</h3>
               <div className="grid grid-cols-2 gap-8">
                 <div>
                     yes
