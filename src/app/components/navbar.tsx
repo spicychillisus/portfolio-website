@@ -17,6 +17,9 @@ const Navbar = () => {
                 </Link>
                 <div className="hidden sm:flex">
                     <ul className="hidden sm:flex">
+                        <Link href="/resume">
+                            <li className="ml-10 lowercase hover:border-b text-base">Resume</li>
+                        </Link>
                         <Link href="/projects">
                             <li className="ml-10 lowercase hover:border-b text-base">Projects</li>
                         </Link>

@@ -9,7 +9,7 @@ import {
  } 
 from "next/font/google";
 import emailIcon from "./components/emailIcon";
-import nextIcon from "./components/nextIcon";
+
 
 const inter = Inter({
   weight: "500",
@@ -27,7 +27,8 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <div className="content-center pr-16 pl-16">
+      
+      <div className="content-center pr-16 pl-16"> {/* container */}
         <div className="grid md:grid-cols-3 gap-12">
             <div className="bg-gray-800 rounded-xl pl-2 pt-2 col-span-1">
               <h1 className="uppercase font-semibold text-center sm:text-md lg:text-2xl md:text-lg">contact information</h1>
@@ -40,15 +41,8 @@ export default function Home() {
                 specialising in Software Development. I decided to chose this pathway as since young, I've been really curious on how software and applications
                 worked, as well as the technology and architecture behind a software and application.
               </p>
-              <h3 className="uppercase text-xl font-bold">my hobbies</h3>
-              <div className="grid grid-cols-2 gap-8">
-                <div>
-                    yes
-                </div>
-                <div>
-                    no
-                </div>
-              </div>
+              <h3 className="uppercase text-xl font-bold pb-2">languages</h3>
+              
             </div>
             
         </div>
