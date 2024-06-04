@@ -7,7 +7,7 @@ const HeroSection = () => {
         <section className="mt-6 mb-10 pt-6 pb-10">
             <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-4 mb-4">
                 <div className="col-span-2">
-                    <h1 className="text-white font-bold text-4xl lg:text-6xl mb-3 mt-3">
+                    <h1 className="text-white lg:text-left sm:text-center font-bold text-4xl lg:text-6xl mb-3 mt-3">
                         Hello, I'm Asher Reyes
                     </h1>
                     <p className="text-lg md:text-base sm:text-sm">
