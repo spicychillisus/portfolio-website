@@ -1,7 +1,7 @@
 // it's so annoying that i have to place all my elements in a main class
 
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
+import Navbar from "./navbar/navbar";
+import Footer from "./components/footer/footer";
 import { metadata } from "./layout";
 import HeroSection from "./components/hero/heroSection";
 import AboutMe from "./components/about-me/aboutMe";
@@ -15,7 +15,7 @@ export default function Home() {
 
   // displayed on website
   return (
-    <main className="container">
+    <main>
       <Navbar />
       <div className="content-center pr-16 pl-16"> {/* container */}
         <HeroSection />

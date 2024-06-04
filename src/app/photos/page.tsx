@@ -1,11 +1,15 @@
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
+import Navbar from "../navbar/navbar";
+import Footer from "../components/footer/footer";
+import PictureDisplay from "./component/pictureDisplay";
+
 
 const Photos = () => {
     return (
         <main>
             <Navbar />
             <h1>Photos</h1>
+            
+            <Footer />
         </main>
     )
 }

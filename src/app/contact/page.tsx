@@ -1,6 +1,6 @@
 
-import Navbar from "../components/navbar"
-import Footer from "../components/footer"
+import Navbar from "../navbar/navbar"
+import Footer from "../components/footer/footer"
 
 
 export default function Contact() {
