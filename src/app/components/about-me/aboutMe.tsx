@@ -21,6 +21,12 @@ const AboutMe = () => {
                     But I'm always working hard to try and improve myself and my skills so that one day I could change the world with coding.
                 </p>
             </div>
+
+            <div>
+                <h2 className="text-center text-white font-bold text-5xl mt-3">
+                    What I Do
+                </h2>
+            </div>
             
         </div>
     )

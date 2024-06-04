@@ -1,5 +1,5 @@
 
-import Navbar from "../navbar/navbar"
+import Navbar from "../components/navbar/navbar"
 import Footer from "../components/footer/footer"
 import { metadata } from "../layout"
 import { Metadata } from "next"
