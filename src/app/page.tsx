@@ -15,7 +15,7 @@ export default function Home() {
 
   // displayed on website
   return (
-    <main>
+    <main className="container">
       <Navbar />
       <div className="content-center pr-16 pl-16"> {/* container */}
         <HeroSection />
