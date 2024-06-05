@@ -29,17 +29,12 @@ const AboutMe = () => {
                     
                 </h2>
                 <div className="grid lg:grid-cols-3 gap-4 mt-2 pt-2">
-                    <Project tittle="test" description="
-                                                        loren ipsum bs
-                                                        ">                               
+                    <Project tittle="test" 
+                    description="test">                               
                     </Project>
-                    <Project tittle="test" description="
-                                                    loren ipsum bs
-                                                    ">                               
+                    <Project tittle="test" description="test">                               
                     </Project>
-                    <Project tittle="test" description="
-                                                        loren ipsum bs
-                                                        ">                               
+                    <Project tittle="test" description="test">                               
                     </Project>  
                 </div>
                 

@@ -9,7 +9,7 @@ interface ProjectProps {
 const Project = ({tittle, description}: ProjectProps) => {
     return (
         <section>
-            <div className="bg-gray-800">
+            <div className="bg-gray-800 rounded-2xl">
                 <h3 className="font-bold text-xl text-center">
                     {tittle}
                 </h3>
