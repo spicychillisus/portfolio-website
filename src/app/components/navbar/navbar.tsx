@@ -2,11 +2,18 @@
 
 import Link from "next/link"
 import React from "react"
-import { AiOutlineMenu } from "react-icons/ai"
 import { useState } from "react"
+import { FiMenu } from "react-icons/fi";
+
 
 
 const Navbar = () => {
+
+const [toggle, setToggle] = useState(false);
+
+const handleToggle = () => {
+    setToggle(!toggle);
+}
 
     return (
         <nav className="w-full h-24">
@@ -30,6 +37,15 @@ const Navbar = () => {
                             <li className="ml-10 lowercase hover:border-b text-base">Contact</li>
                         </Link>
                     </ul>
+                </div>
+                {/* hamburger */}
+                <div className="md:hidden lg:hidden">
+                    <button
+                    className=""
+                    onClick={() => handleToggle()}
+                    >
+
+                    </button>
                 </div>
             </div>
         </nav>
