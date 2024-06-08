@@ -1,28 +1,23 @@
-"use client"; // so as to tell the server that i am using useState for client side
+"use client"; 
 
 import Link from "next/link"
-import React from "react"
-import { useState } from "react"
+import React, { useState } from "react"
 import { FiMenu } from "react-icons/fi";
-
+import { RxCross1 } from "react-icons/rx";
 
 
 const Navbar = () => {
 
-const [toggle, setToggle] = useState(false);
-
-const handleToggle = () => {
-    setToggle(!toggle);
-}
+const [navbar, setNavbar] = useState(false);
 
     return (
         <nav className="w-full h-24">
-            <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
+            <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16" onClick={()=> setNavbar(false)}>
                 {/* logo */}
                 <Link href='/'>
                     <h1 className="font-bold text-lg">Asher Reyes</h1>
                 </Link>
-                <div className="hidden sm:flex">
+                <div className="sm:flex">
                     <ul className="hidden sm:flex">
                         <Link href="/resume">
                             <li className="ml-10 lowercase hover:border-b text-base">Resume</li>
@@ -40,12 +35,22 @@ const handleToggle = () => {
                 </div>
                 {/* hamburger */}
                 <div className="md:hidden lg:hidden">
-                    <button
-                    className=""
-                    onClick={() => handleToggle()}
-                    >
-
-                    </button>
+                    {!navbar ? (
+                        
+                        <button
+                        className=""
+                        onClick={() => setNavbar(true)}
+                        >
+                        <FiMenu className="h-5 w-5" />
+                        </button>
+                    ) : (
+                        <button
+                        className=""
+                        onClick={() => setNavbar(false)}
+                        >
+                        <RxCross1 className="h-5 w-5" />
+                        </button>
+                    )}
                 </div>
             </div>
         </nav>
