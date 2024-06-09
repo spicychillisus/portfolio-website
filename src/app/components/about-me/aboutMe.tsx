@@ -36,7 +36,7 @@ const AboutMe = () => {
                 <h2 className="text-center text-white font-bold text-5xl mt-3">
                     What I Do
                 </h2>
-                <div className="grid lg:grid-cols-3 gap-4 mt-2 pt-2">
+                <div className="grid lg:grid-cols-3 md:grid-cols-3 gap-4 mt-2 pt-2">
                     {projects.map((project) => (
                         <Project
                             tittle={project.name}
