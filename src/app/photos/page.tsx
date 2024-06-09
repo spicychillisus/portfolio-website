@@ -1,4 +1,4 @@
-import Navbar from "../components/navbar/navbar";
+import Navbar from "../components/navbar/navbarOld";
 import Footer from "../components/footer/footer";
 import PictureDisplay from "./component/pictureDisplay";
 

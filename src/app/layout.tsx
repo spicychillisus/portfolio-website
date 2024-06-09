@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import font from "next/font";
+//import font from "next/font";
 import { Inter } from "next/font/google";
-import { Istok_Web } from "next/font/google";
+//import { Istok_Web } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });

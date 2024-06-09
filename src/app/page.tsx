@@ -1,5 +1,6 @@
 // it's so annoying that i have to place all my elements in a main class
 
+//import Navbar from "./components/navbar/navbar";
 import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
 import { metadata } from "./layout";

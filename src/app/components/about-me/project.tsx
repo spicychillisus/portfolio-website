@@ -4,9 +4,10 @@ interface ProjectProps {
     // icon: string; // will use if needed
     tittle: string;
     description: string;
+    link: string;
 }
 
-const Project = ({tittle, description}: ProjectProps) => {
+const Project = ({tittle, description, link}: ProjectProps) => {
     return (
         <section>
             <div className="bg-gray-800 rounded-2xl">
@@ -15,6 +16,11 @@ const Project = ({tittle, description}: ProjectProps) => {
                 </h3>
                 <p className="text-center text-base font-normal text-white">
                 {description}
+                </p>
+                <p className="text-center text-base font-normal">
+                    <span>
+                        link: <a href={link}>{link}</a>
+                    </span>
                 </p>
             </div>
         </section>
