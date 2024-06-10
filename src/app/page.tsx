@@ -6,7 +6,7 @@ import Footer from "./components/footer/footer";
 import { metadata } from "./layout";
 import HeroSection from "./components/hero/heroSection";
 import AboutMe from "./components/about-me/aboutMe";
-import { useState, useEffect } from "react";
+//import { useState, useEffect } from "react";
 
 
 /* 

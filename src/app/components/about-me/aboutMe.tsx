@@ -6,7 +6,6 @@ this component is to not be used anywhere else in the website
 //import { RandomPictureDisplay } from "@/app/photos/component/pictureDisplay";
 //import { image } from "@nextui-org/theme";
 import Project from "./project";
-import capitaliseFirstLetter from "../misc/capitaliseFirstLetter"
 
 
 let projects = [
@@ -28,10 +27,11 @@ let projects = [
         image: "",
         name: "Gamified Sustainability Website",
         description: "This website site was a full-stack project for school that gamifies sustainability tasks. Players can complete tasks and earn points and use those points to purchase vehicles.",
-        link: "https://github.com/spicychillisus/fed-ca1-dcitp",
+        link: "https://github.com/spicychillisus/bed-ca2-public",
         status: "Completed"
     }
 ]
+
 
 const AboutMe = () => {
     return (
@@ -54,6 +54,9 @@ const AboutMe = () => {
                 <h2 className="text-center text-white font-bold text-5xl mt-3">
                     My Works
                 </h2>
+                <p className="text-center text-white font-normal text-base mt-2">
+                    These are some of my projects that I have worked on in the past.
+                </p>
                 <div className="grid lg:grid-cols-3 md:grid-cols-3 gap-4 mt-2 pt-2 pl-4 pr-4">
                     {projects.map((project) => (
                         <Project
@@ -61,7 +64,7 @@ const AboutMe = () => {
                             tittle={project.name}
                             description={project.description}
                             link={project.link}
-                            status={capitaliseFirstLetter(project.status)}
+                            status={project.status}
                         />
                     ))
                     }

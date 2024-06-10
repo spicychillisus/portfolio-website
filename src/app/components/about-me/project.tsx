@@ -2,6 +2,7 @@ import React from "react";
 import {Button, ButtonGroup} from "@nextui-org/button";
 
 
+
 interface ProjectProps {
     // icon: string; // will use if needed
     image: string;
@@ -11,6 +12,10 @@ interface ProjectProps {
     status: string;
 }
 
+
+
+
+
 const Project = ({image, tittle, description, link, status}: ProjectProps) => {
     return (
         <section className="">
@@ -18,7 +23,7 @@ const Project = ({image, tittle, description, link, status}: ProjectProps) => {
             <div className="bg-gray-800 rounded-2xl pl-2 pr-2">
                 <img 
                 src={image} 
-                alt="could not load image."
+                alt="could not load image or no image available."
                 className="rounded-2xl w-full h-40 object-cover flex justify-center items-center"
                 />
                 <h3 className="font-bold text-xl text-center">
@@ -34,9 +39,21 @@ const Project = ({image, tittle, description, link, status}: ProjectProps) => {
                         </ButtonGroup>
                     </a>
                 </p>
-                <span className="text-white flex justify-center font-normal text-base pt-2 pb-2">
-                    Status: {status}
-                </span>
+                <p className="text-center text-base font-normal pt-2 pl-2">
+                    Status: {
+                        status === "Completed" ? (
+                            <span className="text-green-500 font-bold">
+                                {status}
+                            </span>
+                        ) : (
+                            <span className="text-red-500 font-semibold">
+                                {status}
+                            </span>
+                        )
+                    }
+                </p>
+                
+                
             </div>
         </section>
     )

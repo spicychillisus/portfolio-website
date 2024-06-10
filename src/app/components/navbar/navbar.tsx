@@ -29,7 +29,9 @@ const Navbar = () => {
                     </h1>
                 </Link>
                 <div className="block md:hidden lg:hidden">
-                {!navbar ? (
+                {
+                // PLEASE DO NOT TOUCH THIS I'M BEGGING I JUST GOT THIS TO WORK
+                !navbar ? (
                     // if navbar not open, show FiMenu icon and not display the menu options
                     // if clicked, setNavbar to true and show the RxCross1 icon and the menu options
                     // this part will only function on small screens
@@ -37,18 +39,23 @@ const Navbar = () => {
                         className="items-center flex"
                         onClick={() => setNavbar(true)}
                     >
-
+                        <FiMenu className="h-5 w-5" />
                     </button>
                 ) : (
+                    // if navbar is open, show RxCross1 icon and display the menu options
                     <button
                         className="items-center flex"
                         onClick={() => setNavbar(false)}
                     >
-
+                        <RxCross1 className="h-5 w-5" />
                     </button>
                 )}
                 <div className="content-end">
-
+                    <ul className="list-none m-0 p-0">
+                        {links.map((link) => (
+                            <NavLink href={link.href} name={link.name} />
+                        ))}
+                    </ul>
                 </div>
             </div>
             </div>
