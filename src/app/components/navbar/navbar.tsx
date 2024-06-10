@@ -9,7 +9,7 @@ import NavLink from "./navLink";
 import { FiMenu } from "react-icons/fi";
 import { RxCross1 } from "react-icons/rx";
 
-const links = [
+let links = [
     {name: 'Resume', href: '/resume'},
     {name: 'Projects', href: '/projects'},
     {name: 'Photography Works', href: '/photos'},

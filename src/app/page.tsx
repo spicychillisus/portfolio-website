@@ -6,6 +6,8 @@ import Footer from "./components/footer/footer";
 import { metadata } from "./layout";
 import HeroSection from "./components/hero/heroSection";
 import AboutMe from "./components/about-me/aboutMe";
+import { useState, useEffect } from "react";
+
 
 /* 
 all of the components that are displayed on the website are placed here
