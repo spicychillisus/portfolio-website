@@ -1,6 +1,7 @@
 import photo from '../hero/photo.jpeg'
 import Image from 'next/image';
 import Link from 'next/link';
+import {Button, ButtonGroup} from "@nextui-org/button";
 
 const HeroSection = () => {
     return (
@@ -21,8 +22,8 @@ const HeroSection = () => {
                             </Link>
                         </div>
                         <div className='col-span-2 bg-gradient-to-r from-indigo-800 to-purple-900 rounded-xl'>
-                            <Link href="/about">
-                                <li className='text-white font-medium list-none text-center mt-2'>About</li>
+                            <Link href="/projects">
+                                <li className='text-white font-medium list-none text-center mt-2'>Projects</li>
                             </Link>
                         </div>
                     </div>

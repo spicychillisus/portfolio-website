@@ -5,20 +5,22 @@
 
 import Link from "next/link"
 import React, { useState } from "react"
-import NavLink from "./navLink";
+//import NavLink from "./navLink";
 import { FiMenu } from "react-icons/fi";
 import { RxCross1 } from "react-icons/rx";
 
-let links = [
+/* let links = [
     {name: 'Resume', href: '/resume'},
     {name: 'Projects', href: '/projects'},
     {name: 'Photography Works', href: '/photos'},
     {name: 'Contact', href: '/contact'}
-]
+] */
+
 
 const Navbar = () => {
 
     const [navbar, setNavbar] = useState(false);
+    const [mobileMenu, setMobileMenu] = useState(false);
 
     return (
         <nav className="w-full h-24">
@@ -28,7 +30,7 @@ const Navbar = () => {
                         Asher Reyes
                     </h1>
                 </Link>
-                <div className="block md:hidden lg:hidden">
+                <div className="block lg:hidden">
                 {
                 // PLEASE DO NOT TOUCH THIS I'M BEGGING I JUST GOT THIS TO WORK
                 !navbar ? (
@@ -48,16 +50,22 @@ const Navbar = () => {
                         onClick={() => setNavbar(false)}
                     >
                         <RxCross1 className="h-5 w-5" />
+                        
                     </button>
-                )}
-                <div className="content-end">
-                    <ul className="list-none m-0 p-0">
-                        {links.map((link) => (
-                            <NavLink href={link.href} name={link.name} />
-                        ))}
-                    </ul>
+                    // display the menu options
+                    
+                )} 
                 </div>
-            </div>
+                <div 
+                className={
+                    mobileMenu ? "block lg:flex" : "hidden lg:flex"
+                }
+                onClick={
+                    () => setMobileMenu(false)
+                }
+                >
+
+                </div>
             </div>
             
             

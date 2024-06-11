@@ -18,7 +18,7 @@ interface ProjectProps {
 
 const Project = ({image, tittle, description, link, status}: ProjectProps) => {
     return (
-        <section className="">
+        <section>
             
             <div className="bg-gray-800 rounded-2xl pl-2 pr-2">
                 <img 
@@ -29,7 +29,7 @@ const Project = ({image, tittle, description, link, status}: ProjectProps) => {
                 <h3 className="font-bold text-xl text-center">
                     {tittle}
                 </h3>
-                <p className="text-center text-white font-normal text-sm">
+                <p className="text-center font-normal text-sm">
                 {description}
                 </p>
                 <p className="text-center text-base font-normal">
@@ -46,7 +46,7 @@ const Project = ({image, tittle, description, link, status}: ProjectProps) => {
                                 {status}
                             </span>
                         ) : (
-                            <span className="text-red-500 font-semibold">
+                            <span className="text-red-400 font-semibold">
                                 {status}
                             </span>
                         )

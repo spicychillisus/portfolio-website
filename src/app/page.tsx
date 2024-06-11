@@ -13,6 +13,7 @@ import AboutMe from "./components/about-me/aboutMe";
 all of the components that are displayed on the website are placed here
 */
 
+
 export default function Home() {
   metadata.title = "home"; // tittle
 
