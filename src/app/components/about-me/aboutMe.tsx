@@ -9,6 +9,7 @@ import Project from "./project";
 
 
 let projects = [
+    // MAXIMUM OF 3 PROJECTS!
     {
         image: "",
         name: "Portfolio Website",
@@ -57,7 +58,7 @@ const AboutMe = () => {
                 <p className="text-center text-white font-normal text-base mt-2">
                     These are some of my projects that I have worked on in the past.
                 </p>
-                <div className="grid lg:grid-cols-3 md:grid-cols-3 gap-4 mt-2 pt-2 pl-4 pr-4">
+                <div className="grid lg:grid-cols-3 md:grid-cols-3 gap-4 mt-2 pt-2 pl-4 pr-4 pb-4">
                     {projects.map((project) => (
                         <Project
                             image={project.image}

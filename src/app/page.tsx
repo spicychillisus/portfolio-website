@@ -1,12 +1,16 @@
-// it's so annoying that i have to place all my elements in a main class
+/*
 
-//import Navbar from "./components/navbar/navbar";
+this project was done by spicychillisus on github beacuse he wanted to show to his future employers that
+he can code and make a website from scratch.
+
+keep in mind i had no knowledge of nextjs or react before doing this project so if i can do it so can you
+
+*/
 import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
 import { metadata } from "./layout";
 import HeroSection from "./components/hero/heroSection";
 import AboutMe from "./components/about-me/aboutMe";
-//import { useState, useEffect } from "react";
 
 
 /* 

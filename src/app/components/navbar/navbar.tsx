@@ -1,26 +1,24 @@
 "use client"; 
 
-// a navbar redesign from the original navbar.tsx
-// this navbar will contain a new coding discipline and integrate 2 icons for the hamburger menu for smaller screens
+// MAIN FILE
 
 import Link from "next/link"
 import React, { useState } from "react"
 //import NavLink from "./navLink";
 import { FiMenu } from "react-icons/fi";
 import { RxCross1 } from "react-icons/rx";
+import MobileLink from "./mobileLink";
 
-/* let links = [
-    {name: 'Resume', href: '/resume'},
-    {name: 'Projects', href: '/projects'},
-    {name: 'Photography Works', href: '/photos'},
-    {name: 'Contact', href: '/contact'}
-] */
-
+// only appears on mobile
+function displayMobileMenu() {
+    return (
+        <h1>hi</h1>
+    )
+}
 
 const Navbar = () => {
 
     const [navbar, setNavbar] = useState(false);
-    const [mobileMenu, setMobileMenu] = useState(false);
 
     return (
         <nav className="w-full h-24">
@@ -30,6 +28,19 @@ const Navbar = () => {
                         Asher Reyes
                     </h1>
                 </Link>
+                <div className="sm:flex">
+                    <ul className="hidden sm:flex">
+                        <Link href="/resume">
+                            <li className="ml-10 lowercase hover:border-b text-base">Resume</li>
+                        </Link>
+                        <Link href="/photos">
+                            <li className="ml-10 lowercase hover:border-b text-base">Photography Works</li>
+                        </Link>
+                        <Link href="/contact">
+                            <li className="ml-10 lowercase hover:border-b text-base">Contact</li>
+                        </Link>
+                    </ul>
+                </div>
                 <div className="block lg:hidden">
                 {
                 // PLEASE DO NOT TOUCH THIS I'M BEGGING I JUST GOT THIS TO WORK
@@ -37,6 +48,7 @@ const Navbar = () => {
                     // if navbar not open, show FiMenu icon and not display the menu options
                     // if clicked, setNavbar to true and show the RxCross1 icon and the menu options
                     // this part will only function on small screens
+                    // don't add a div below this please it will make the icons go weird
                     <button
                         className="items-center flex"
                         onClick={() => setNavbar(true)}
@@ -44,7 +56,7 @@ const Navbar = () => {
                         <FiMenu className="h-5 w-5" />
                     </button>
                 ) : (
-                    // if navbar is open, show RxCross1 icon and display the menu options
+                    // if navbar is open, show RxCross1 icon
                     <button
                         className="items-center flex"
                         onClick={() => setNavbar(false)}
@@ -52,22 +64,24 @@ const Navbar = () => {
                         <RxCross1 className="h-5 w-5" />
                         
                     </button>
-                    // display the menu options
                     
                 )} 
                 </div>
-                <div 
-                className={
-                    mobileMenu ? "block lg:flex" : "hidden lg:flex"
+                {
+                    /*
+                    do not put any codes here it will break the navbar and i'll be sad
+                    */
                 }
-                onClick={
-                    () => setMobileMenu(false)
-                }
-                >
-
-                </div>
             </div>
-            
+            <div className={
+                    navbar ? 
+                    "flex justify-center text-center bg-slate-200" 
+                    : 
+                    "hidden"
+            }>
+                <span>test</span>
+                
+            </div>
             
             
         </nav>
