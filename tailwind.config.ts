@@ -8,6 +8,7 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@nextui-org/theme/dist/components/(button|ripple|spinner).js"
   ],
+  darkMode: 'class', // or 'media' or 'class
   theme: {
     extend: {
       backgroundImage: {
