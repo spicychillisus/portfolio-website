@@ -10,13 +10,13 @@ interface ProjectProps {
     description: string;
     link: string;
     status: string;
+    // languages?: string[];
 }
 
 
-
-
-
-const Project = ({image, tittle, description, link, status}: ProjectProps) => {
+const Project = ({
+    image, tittle, description, link, status
+}: ProjectProps) => {
     return (
         <section>
             
@@ -39,6 +39,7 @@ const Project = ({image, tittle, description, link, status}: ProjectProps) => {
                         </ButtonGroup>
                     </a>
                 </p>
+                
                 <p className="text-center text-base font-normal pt-2 pl-2">
                     Status: {
                         status === "Completed" ? (

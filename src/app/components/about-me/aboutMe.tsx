@@ -9,7 +9,6 @@ import Project from "./project";
 
 
 let projects = [
-    // MAXIMUM OF 3 PROJECTS!
     {
         image: "",
         name: "Portfolio Website",
@@ -32,6 +31,9 @@ let projects = [
         status: "Completed"
     }
 ]
+
+//console.log(projects[0].languages[0]);
+
 
 
 const AboutMe = () => {

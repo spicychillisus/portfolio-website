@@ -9,12 +9,25 @@ import { FiMenu } from "react-icons/fi";
 import { RxCross1 } from "react-icons/rx";
 import MobileLink from "./mobileLink";
 
-// only appears on mobile
-function displayMobileMenu() {
-    return (
-        <h1>hi</h1>
-    )
-}
+// using the data from the MobileLink component, we can create a list of links to be displayed in the navbar
+// the links will be displayed in the MobileLink component
+// the MobileLink component will be displayed in the component 
+let links = [
+    // name: the name of the link that will be displayed
+    // route: the route that the link will redirect to
+    {
+        name: "Resume",
+        route: "/resume"
+    },
+    {
+        name: "Photography Works",
+        route: "/photos"
+    },
+    {
+        name: "Contact",
+        route: "/contact"
+    }
+]
 
 const Navbar = () => {
 
@@ -74,12 +87,14 @@ const Navbar = () => {
                 }
             </div>
             <div className={
+                // shows the menu options if the navbar is open
+                // stays hidden if the navbar is closed
                     navbar ? 
-                    "flex justify-center text-center bg-slate-200" 
+                    "flex justify-center text-center bg-black" 
                     : 
                     "hidden"
             }>
-                <span>test</span>
+                
                 
             </div>
             
