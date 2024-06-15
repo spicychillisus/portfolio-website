@@ -94,7 +94,15 @@ const Navbar = () => {
                     : 
                     "hidden"
             }>
-                
+                <ul className="text-center">
+                    {
+                        links.map((link, index) => {
+                            return (
+                                <MobileLink key={index} name={link.name} route={link.route} />
+                            )
+                        })
+                    }
+                </ul>
                 
             </div>
             

@@ -11,7 +11,7 @@ interface PictureDisplayProps {
 export default function PictureDisplay({picture, text, tittle, description}: PictureDisplayProps) {
 
     return (
-        <div>
+        <div className="">
             <img src={picture} alt={text} />
             <h3>{tittle}</h3>
             <p>{description}</p>
