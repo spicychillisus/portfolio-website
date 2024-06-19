@@ -8,10 +8,13 @@ interface PictureDisplayProps {
 }
 
 
-export default function PictureDisplay({picture, text, tittle, description}: PictureDisplayProps) {
-
+export function PictureDisplay({picture, text, tittle, description}: PictureDisplayProps) {
+/**
+ * this is the picture modal that will be displayed when the user clicks
+ * on the picture in the gallery
+ */
     return (
-        <div className="">
+        <div className="rounded-xl">
             <img src={picture} alt={text} />
             <h3>{tittle}</h3>
             <p>{description}</p>
@@ -22,8 +25,24 @@ export default function PictureDisplay({picture, text, tittle, description}: Pic
     
 }
 
+/**
+ * not sure what this is for but it was intended for the home page but now it's gna go to the top of the photography
+ * works page
+ * this uses the pictures from the gallery
+ */
 export function RandomPictureDisplay() {
     
+}
+
+/**
+ * photos for the random picture display will be taken from here
+ */
+export function photoGallery() {
+    return (
+        <div>
+
+        </div>
+    )
 }
 
 

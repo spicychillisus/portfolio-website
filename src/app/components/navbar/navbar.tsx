@@ -90,7 +90,7 @@ const Navbar = () => {
                 // shows the menu options if the navbar is open
                 // stays hidden if the navbar is closed
                     navbar ? 
-                    "flex justify-center text-center bg-black" 
+                    "flex justify-center text-center" 
                     : 
                     "hidden"
             }>

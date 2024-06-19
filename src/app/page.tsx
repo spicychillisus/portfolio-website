@@ -6,6 +6,11 @@ he can code and make a website from scratch.
 keep in mind i had no knowledge of nextjs or react before doing this project so if i can do it so can you
 
 */
+
+/**
+ * @author spicychillisus
+ * link: 
+ */
 import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
 import { metadata } from "./layout";

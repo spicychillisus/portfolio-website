@@ -1,4 +1,5 @@
-
+import { useEffect, useState } from "react";
+import { PictureDisplay, RandomPictureDisplay, photoGallery } from "./component/pictureDisplay";
 
 
 // images will be placed in this array and displayed in the image gallery
