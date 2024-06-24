@@ -1,11 +1,10 @@
+
 import type { Metadata } from "next";
-//import font from "next/font";
-import { Inter } from "next/font/google";
-//import { Istok_Web } from "next/font/google";
+import { Inter, Istok_Web } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-//const istokWeb = Istok_Web({ subsets: ["latin"] });
+const inter = Inter({ weight: '500', subsets: ["latin"] });
+const IstokWeb = Istok_Web({ weight: '400', subsets: ['latin'], style: 'normal'})
 
 
 export const metadata: Metadata = {
@@ -20,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+      </body>
     </html>
   );
 }

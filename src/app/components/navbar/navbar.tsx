@@ -43,8 +43,8 @@ const Navbar = () => {
                 </Link>
                 <div className="sm:flex">
                     <ul className="hidden sm:flex">
-                        <Link href="/resume">
-                            <li className="ml-10 lowercase hover:border-b text-base">Resume</li>
+                        <Link href="/projects">
+                            <li className="ml-10 lowercase hover:border-b text-base">Projects</li>
                         </Link>
                         <Link href="/photos">
                             <li className="ml-10 lowercase hover:border-b text-base">Photography Works</li>
@@ -98,7 +98,11 @@ const Navbar = () => {
                     {
                         links.map((link, index) => {
                             return (
-                                <MobileLink key={index} name={link.name} route={link.route} />
+                                <MobileLink 
+                                key={index} 
+                                name={link.name} 
+                                route={link.route} 
+                                />
                             )
                         })
                     }

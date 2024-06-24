@@ -38,7 +38,7 @@ let projects = [
 
 const AboutMe = () => {
     return (
-        <div className="mt-2">
+        <div className="mt-2 mb-8 py-8 border-white border-2 rounded-2xl">
             <h2 className="font-bold text-5xl text-white text-center">
                 About Me
             </h2>
@@ -53,7 +53,7 @@ const AboutMe = () => {
                 </p>
             </div>
 
-            <div className="mt-2 ml-4 mr-4">
+            {/* <div className="mt-2 ml-4 mr-4">
                 <h2 className="text-center text-white font-bold text-5xl mt-3">
                     My Works
                 </h2>
@@ -63,6 +63,7 @@ const AboutMe = () => {
                 <div className="grid lg:grid-cols-3 md:grid-cols-3 gap-4 mt-2 pt-2 pl-4 pr-4 pb-4">
                     {projects.map((project) => (
                         <Project
+                        key={project.name}
                             image={project.image}
                             tittle={project.name}
                             description={project.description}
@@ -72,7 +73,7 @@ const AboutMe = () => {
                     ))
                     }
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
