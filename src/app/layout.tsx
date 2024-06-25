@@ -4,7 +4,7 @@ import { Inter, Istok_Web } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ weight: '500', subsets: ["latin"] });
-const IstokWeb = Istok_Web({ weight: '400', subsets: ['latin'], style: 'normal'})
+//const IstokWeb = Istok_Web({ weight: '400', subsets: ['latin'], style: 'normal'})
 
 
 export const metadata: Metadata = {

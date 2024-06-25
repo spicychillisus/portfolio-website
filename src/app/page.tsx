@@ -16,11 +16,13 @@ import Footer from "./components/footer/footer";
 import { metadata } from "./layout";
 import HeroSection from "./components/hero/heroSection";
 import AboutMe from "./components/about-me/aboutMe";
+import Hobbies from "./components/about-me/hobbies/hobbiesExport";
 
 
 export default function Home() {
   metadata.title = "home"; // tittle
 
+  
   // displayed on website
   return (
     <main>
@@ -28,6 +30,7 @@ export default function Home() {
       <div className="content-center pr-16 pl-16"> {/* container */}
         <HeroSection />
         <AboutMe />   
+        <Hobbies />
       </div>
       
 

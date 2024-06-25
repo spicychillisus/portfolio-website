@@ -3,34 +3,11 @@ solely for the main page of the website
 this component is to not be used anywhere else in the website
 */
 
-//import { RandomPictureDisplay } from "@/app/photos/component/pictureDisplay";
-//import { image } from "@nextui-org/theme";
-import Project from "./project";
 
 
-let projects = [
-    {
-        image: "",
-        name: "Portfolio Website",
-        description: "You are looking at it now! This website showcases my past projects and my resume. I built this website with Next.js and TailwindCSS.",
-        link: "https://github.com/spicychillisus/portfolio-website",
-        status: "Work In Progress"
-    },
-    {
-        image: "",
-        name: "Portfolio Website made with Bootstrap",
-        description: "This portfolio website was made for a school project and was built with Bootstrap. This website showcases about sustainability",
-        link: "https://github.com/spicychillisus/fed-ca1-dcitp",
-        status: "Completed"
-    },
-    {
-        image: "",
-        name: "Gamified Sustainability Website",
-        description: "This website site was a full-stack project for school that gamifies sustainability tasks. Players can complete tasks and earn points and use those points to purchase vehicles.",
-        link: "https://github.com/spicychillisus/bed-ca2-public",
-        status: "Completed"
-    }
-]
+
+
+
 
 //console.log(projects[0].languages[0]);
 
@@ -39,7 +16,7 @@ let projects = [
 const AboutMe = () => {
     return (
         <div className="mt-2 mb-8 py-8 border-white border-2 rounded-2xl">
-            <h2 className="font-bold text-5xl text-white text-center">
+            <h2 className="font-bold text-6xl text-white text-center pb-2">
                 About Me
             </h2>
             <div className="lg:pl-10 lg:pr-10 lg:ml-10 lg:mr-10 sm:text-center">
@@ -52,28 +29,6 @@ const AboutMe = () => {
                     But I'm always working hard to try and improve myself and my skills so that one day I could change the world with coding.
                 </p>
             </div>
-
-            {/* <div className="mt-2 ml-4 mr-4">
-                <h2 className="text-center text-white font-bold text-5xl mt-3">
-                    My Works
-                </h2>
-                <p className="text-center text-white font-normal text-base mt-2">
-                    These are some of my projects that I have worked on in the past.
-                </p>
-                <div className="grid lg:grid-cols-3 md:grid-cols-3 gap-4 mt-2 pt-2 pl-4 pr-4 pb-4">
-                    {projects.map((project) => (
-                        <Project
-                        key={project.name}
-                            image={project.image}
-                            tittle={project.name}
-                            description={project.description}
-                            link={project.link}
-                            status={project.status}
-                        />
-                    ))
-                    }
-                </div>
-            </div> */}
         </div>
     );
 }
