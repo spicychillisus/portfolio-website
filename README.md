@@ -12,4 +12,14 @@ to install the required dependencies, do:
 npm install
 ```
 
+afterwards, run:
+```
+npm run dev
+```
+
+in the terminal to start the project.
+
+i'll be hosting this on a domain once i consider my website finished, so stay tuned!
+website link: <insert link here>
+
 made with nextjs: https://github.com/vercel/next.js

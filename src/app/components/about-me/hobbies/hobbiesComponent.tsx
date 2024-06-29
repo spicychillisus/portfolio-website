@@ -1,4 +1,6 @@
 
+//import hobbies from "./hobbiesArray";
+
 interface HobbiesProps {
     name: string;
     description: string;
@@ -8,9 +10,15 @@ interface HobbiesProps {
 const HobbiesComponent = ({name, description, link}: HobbiesProps) => {
     return (
         <div>
-            <h3>
+            <h3 className="text-center">
                 {name}
             </h3>
+            <span>
+                {description}
+            </span>
+            <span>
+                {link}
+            </span>
         </div>
     )
 }

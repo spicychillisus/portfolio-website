@@ -4,5 +4,10 @@ interface ImageCarouselProps {
 }
 
 export default function ImageCarousel({images}: ImageCarouselProps) {
+    
+    return (
+        <div>
 
+        </div>
+    );
 }

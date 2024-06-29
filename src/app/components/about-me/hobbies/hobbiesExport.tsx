@@ -1,15 +1,22 @@
 
 /**
- * main component to be exported to the main page
+ * @description main component to be exported to the main page
+ * @author spicychillisus
  */
 
+// imports
 import hobbies from "./hobbiesArray";
 import HobbiesComponent from "./hobbiesComponent";
 
 
 export default function Hobbies() {
     return (
-        <h1>hi</h1>
+        <section className="py-8 my-8">
+            <h1 className="text-center font-bold">
+                Hobbies
+            </h1>
+            
+        </section>
     )
 }
 
