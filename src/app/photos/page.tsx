@@ -1,8 +1,8 @@
 import Navbar from "../components/navbar/navbar";
 import Footer from "../components/footer/footer";
 //import PictureDisplay from "./component/pictureDisplay";
-import HeroPhotos from "./heroSectionPhotos";
-import { Metadata } from "next";
+import HeroPhotos from "./gallery/heroSectionPhotos";
+import PhotoGallery from "./gallery/photoGallery";
 import { metadata } from "../layout";
 
 metadata.title = "photos"
@@ -12,7 +12,7 @@ const Photos = () => {
         <main>
             <Navbar />
             <HeroPhotos />
-            
+            {/* <PhotoGallery /> */}
             <Footer />
         </main>
     )

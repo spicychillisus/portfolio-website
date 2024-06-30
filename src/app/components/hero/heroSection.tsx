@@ -3,9 +3,9 @@ import photo from '../hero/photo.jpeg'
 import Image from 'next/image';
 import Link from 'next/link';
 import {Button, ButtonGroup} from "@nextui-org/button";
-//import TypewriterEffect from './typewriterText';
 import { TypeAnimation } from 'react-type-animation';
 
+// for mobile links
 let webLinkArray = [
 
 ]
@@ -29,13 +29,13 @@ const HeroSection = () => {
                         <TypeAnimation
                             sequence={[
                                 
-                                'coding.',
+                                'coding',
                                 1000, 
-                                'photography.',
+                                'photography',
                                 1000,
-                                'design.',
+                                'design',
                                 1000,
-                                'gaming.',
+                                'gaming',
                                 1000
                             ]}
                             wrapper="span"
