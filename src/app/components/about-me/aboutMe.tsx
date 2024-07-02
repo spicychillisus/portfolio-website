@@ -5,7 +5,7 @@ this component is to not be used anywhere else in the website
 
 const AboutMe = () => {
     return (
-        <div className="mt-8 mb-8 py-8 border-white border-2 rounded-2xl">
+        <div className="mt-8 mb-8 py-8 my-20 border-white border-2 rounded-2xl">
             <h2 className="font-bold text-6xl text-white text-center pb-2">
                 About Me
             </h2>

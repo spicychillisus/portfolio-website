@@ -1,6 +1,9 @@
+interface Photo {
+    photos: string[];
+}
 
-export function sortByYear() {
-
+export function sortByYear({photos}: Photo) {
+    
 }
 
 export function sortByMonth() {

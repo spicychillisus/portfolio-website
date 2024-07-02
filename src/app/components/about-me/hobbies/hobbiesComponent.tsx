@@ -1,25 +1,29 @@
 
-//import hobbies from "./hobbiesArray";
+import { imageCarouselDisplay } from "./carousel";
 
 interface HobbiesProps {
     name: string;
     description: string;
     link: string;
+    images: string[];
 }
 
-const HobbiesComponent = ({name, description, link}: HobbiesProps) => {
+const HobbiesComponent = ({name, description, link, images}: HobbiesProps) => {
     return (
-        <div>
+        <section className="">
+            {
+                imageCarouselDisplay({images})
+            }
             <h3 className="text-center">
                 {name}
             </h3>
-            <span>
+            <span className="flex justify-center">
                 {description}
             </span>
             <span>
                 {link}
             </span>
-        </div>
+        </section>
     )
 }
 

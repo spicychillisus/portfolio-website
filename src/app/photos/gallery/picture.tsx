@@ -1,4 +1,5 @@
-
+// create a picture object to store the information of each picture
+// if i ever do a video object i can always use this class as a template and extend from here :D
 class Picture {
     constructor (
         private name: string,

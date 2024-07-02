@@ -4,11 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {Button, ButtonGroup} from "@nextui-org/button";
 import { TypeAnimation } from 'react-type-animation';
-
-// for mobile links
-let webLinkArray = [
-
-]
+import CustomButton from '../custom-button/customBtn';
 
 
 
