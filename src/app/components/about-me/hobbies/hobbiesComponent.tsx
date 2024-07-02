@@ -8,6 +8,7 @@ interface HobbiesProps {
     images: string[];
 }
 
+// error in line 16 better fix
 const HobbiesComponent = ({name, description, link, images}: HobbiesProps) => {
     return (
         <section className="">
