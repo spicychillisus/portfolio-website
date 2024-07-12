@@ -1,57 +1,44 @@
 "use client";
 import Image from "next/image";
-import React, {useEffect, useRef, useState} from "react";
+import {useEffect, useState} from "react";
+import { ArrowLeft01Icon, ArrowRight01Icon } from "@hugeicons/react-pro";
+import { Button } from "@nextui-org/button";
 
 interface imageCarouselDisplayProps {
     images: string[]; // the links will be imported
 }
 
 // this function takes in a array of images and displays them in a carousel
-export function imageCarouselDisplay({images}: imageCarouselDisplayProps) {
-    const [currentIndex, setCurrentIndex] = useState(0);
+const ImageCarouselDisplay = ({images}: imageCarouselDisplayProps) => {
+    const [currentIndex, setCurrentIndex] = useState(0); // set the index to 0 to signify the beginning of the array
 
-    // this function will change the current index to the next image
-    const goToPrevious = () => {
-        const isFirstImage = currentIndex === 0;
-        const newIndex = isFirstImage ? images.length - 1 : currentIndex - 1;
-        setCurrentIndex(newIndex);
-    };
+    // for the right arrow
+    function nextImage() {
+        // if current image is at the end, go beginning
+        if (currentIndex == images.length - 1) {
+            setCurrentIndex(0); // resets to the beginning
+        } else {
+          // if its not at the end, go to the next image
+            setCurrentIndex(currentIndex + 1);
+        }
+    }
 
-    // this function will change the current index to the previous image
-    const goToNext = () => {
-        const isLastImage = currentIndex === images.length - 1;
-        const newIndex = isLastImage ? 0 : currentIndex + 1;
-        setCurrentIndex(newIndex);
-    };
+    // for the left arrow
+    function previousImage() {
+        // if current image is the first image, go to the last image
+        if (currentIndex == 0) {
+            setCurrentIndex(images.length - 1); // resets to the beginning
+        } else {
+          setCurrentIndex(currentIndex - 1);
+        }
+    }
 
     return (
-        <div className="flex flex-col items-center justify-center">
-          <div className="relative w-full max-w-3xl h-64">
-            {images.map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                alt={`Slide ${index}`}
-                className={`w-full h-full object-cover rounded-lg transition-opacity duration-500 ease-in-out ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
-                style={{ position: 'absolute', top: 0, left: 0 }}
-              />
-            ))}
-          </div>
-          <div className="flex mt-4">
-            <button
-              onClick={goToPrevious}
-              className="px-4 py-2 bg-gray-300 text-gray-800 rounded-l hover:bg-gray-400 transition-colors duration-200"
-            >
-              Previous
-            </button>
-            <button
-              onClick={goToNext}
-              className="px-4 py-2 bg-gray-300 text-gray-800 rounded-r hover:bg-gray-400 transition-colors duration-200"
-            >
-              Next
-            </button>
-          </div>
-        </div>
-      );
+        <section>
+
+        </section>
+    )
 
 }
+
+export default ImageCarouselDisplay;

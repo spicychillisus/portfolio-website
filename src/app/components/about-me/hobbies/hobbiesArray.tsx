@@ -4,7 +4,7 @@ const hobbies = [
     {
         name: "Photography",
         description: `
-        I enjoy doing photography, and like to primarily shoot vehicles and landscapes, as well as design posters and websites.
+        I enjoy doing photography, and like to primarily shoot vehicles and landscapes.
         `,
         image: [
             // insert links to images here

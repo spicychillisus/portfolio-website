@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.4",
+    "@hugeicons/react-pro": "^0.3.2",
     "@nextui-org/button": "^2.0.33",
     "@nextui-org/system": "^2.2.1",
     "@nextui-org/theme": "^2.2.5",
     "framer-motion": "^11.2.10",
+    "fs": "^0.0.1-security",
     "next": "14.2.3",
     "next-themes": "^0.3.0",
     "react": "^18",
