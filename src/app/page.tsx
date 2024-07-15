@@ -1,23 +1,13 @@
-/*
-
-this project was done by spicychillisus on github beacuse he wanted to show to his future employers that
-he can code and make a website from scratch.
-
-keep in mind i had no knowledge of nextjs or react before doing this project so if i can do it so can you
-
-*/
 
 /**
  * @author spicychillisus
- * link: 
+ * link: https://github.com/spicychillisus/portfolio-website
  */
-import Navbar from "./components/navbar/navbar";
-import Footer from "./components/footer/footer";
-import { metadata } from "./layout";
-import HeroSection from "./components/hero/heroSection";
-import AboutMe from "./components/about-me/aboutMe";
-import Hobbies from "./components/about-me/hobbies/hobbiesExport";
 
+import { metadata } from "./layout";
+import Navbar from "./general/Navbar";
+import Footer from "./general/Footer";
+import HeroSection from "./home/HeroSection";
 
 export default function Home() {
   metadata.title = "home"; // tittle
@@ -25,16 +15,9 @@ export default function Home() {
   
   // displayed on website
   return (
-    <main>
+    <main className="bg-home-background">
       <Navbar />
-      <div className="content-center pr-16 pl-16"> {/* container */}
-        <HeroSection />
-        <AboutMe />   
-        <Hobbies />
-      </div>
-      
-
-      <Footer />
+        
     </main>
   );
 }

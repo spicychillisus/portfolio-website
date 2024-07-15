@@ -13,9 +13,10 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "home-background": "linear-gradient(180deg, rgba(213,189,175,1) 4%, rgba(214,204,194,1) 34%, rgba(191,191,191,1) 80%);"
       },
+      
     },
   },
   plugins: [nextui()],
