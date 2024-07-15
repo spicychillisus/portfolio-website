@@ -3,7 +3,7 @@ export class CustomButton {
 
     private tittle: string = "";
     private backgroundColour: string = "";
-    private route: string = "";
+    private route: String = "";
 
     
     setTittle() {
@@ -23,9 +23,12 @@ export class CustomButton {
     }
 
     // function to be called when button is clicked
+    // this is supposed to return a function
     onClick() {
         console.log("Clicked!");
     }
+
+    
 
 }
 

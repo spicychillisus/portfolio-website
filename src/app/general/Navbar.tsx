@@ -9,6 +9,7 @@ let buttonPosition = "h-5 w-5";
 
 const InterFont = Inter({ weight: '500', subsets: ["latin"] });
 const navbarBackground = "h-full w-full bg-white-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100"
+const centerClass = "flex justify-center items-center";
 
 const Navbar = () => {
 
@@ -20,7 +21,7 @@ const Navbar = () => {
                     <div className='flex justify-between items-center h-full w-full'>
                         <div className='px-10 my-3'>  
                             <Link href={"/"}>
-                                <h1 className={`${InterFont.style} font-bold text-xl sm:text-center`}>Asher Reyes</h1>
+                                <h1 className={`${InterFont.style} font-bold text-xl sm:${centerClass}`}>Asher Reyes</h1>
                             </Link>
                         </div>
                         <div className="sm:flex">
@@ -65,7 +66,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className={isOpen ? "block" : "hidden"}>
-                        <div className='text-center'>
+                        <div className='text-center md:lg:hidden'>
                             <Link href={"/gallery"}>
                                 <li className='lowercase list-none hover:underline'>gallery</li>
                             </Link>
