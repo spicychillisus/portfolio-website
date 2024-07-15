@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return (
         <section className='px-14 py-4'>
-                <nav className={`${navbarBackground} lg:w-[1352] lg:h-[50px] rounded-[20px]`}>
+                <nav className={`${navbarBackground} lg:w-[1352] lg:h-[50px] rounded-3xl`}>
                     <div className='flex justify-between items-center h-full w-full'>
                         <div className='px-10 my-3'>  
                             <Link href={"/"}>
@@ -24,21 +24,21 @@ const Navbar = () => {
                         </div>
                         <div className="sm:flex">
                             <ul className='hidden sm:flex lowercase'>
-                                <Link href={"/gallery"}>
-                                    <li className='pr-4'>
+                                <li className='pr-6'>
+                                    <Link href={"/gallery"}>
                                         <span>Gallery</span>
-                                    </li>
-                                </Link>
-                                <Link href={"/projects"}>
-                                    <li className='pr-4'>
+                                    </Link>
+                                </li>
+                                <li className='pr-6'>
+                                    <Link href={"/projects"}>
                                         <span>Projects</span>
-                                    </li>
-                                </Link>
-                                <Link href={"/contact"}>
-                                    <li className='pr-4'>
+                                    </Link>
+                                </li>
+                                <li className='pr-6'>
+                                    <Link href={"/contact"}>
                                         <span>Contact Me</span>
-                                    </li>
-                                </Link>
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
                     </div>
