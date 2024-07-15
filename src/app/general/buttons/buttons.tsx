@@ -19,12 +19,12 @@ export class CustomButton {
     }
 
     setRoute() {
-        
+        this.route = this.route;
     }
 
     // function to be called when button is clicked
     onClick() {
-
+        console.log("Clicked!");
     }
 
 }
