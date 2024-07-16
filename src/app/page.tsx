@@ -8,6 +8,7 @@ import { metadata } from "./layout";
 import Navbar from "./general/Navbar";
 import Footer from "./general/Footer";
 import HeroSection from "./home/HeroSection";
+import Head from "next/head";
 
 export default function Home() {
   metadata.title = "home"; // tittle

@@ -10,7 +10,7 @@ export class CustomButton {
         this.tittle = this.tittle;
     }
 
-    setBackgroundColour() {
+    setBackgroundColour({color}: {color: string}) {
         this.backgroundColour = this.backgroundColour;
     }
 

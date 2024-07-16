@@ -17,7 +17,7 @@ const Navbar = () => {
 
     return (
         <section className='px-14 py-4'>
-                <nav className={`${navbarBackground} lg:w-[1352] lg:h-[50px] rounded-3xl`}>
+                <nav className={`${navbarBackground} lg:w-[1352] lg:h-[50px] rounded-2xl`}>
                     <div className='flex justify-between items-center h-full w-full'>
                         <div className='px-10 my-3'>  
                             <Link href={"/"}>
