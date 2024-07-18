@@ -21,7 +21,8 @@ const config: Config = {
     colors: {
       "weird-brown": "#c88e6d",
       "yes-grey": "#515151",
-      "black": "#000000"
+      "black": "#000000",
+      "lightest-grey-ever": "#d9d9d9"
     }
   },
   plugins: [nextui()],
