@@ -1,6 +1,8 @@
+import Navbar from "../general/Navbar";
+
 const AboutMe = () => {
     return (
-        <h1>test</h1>
+        <Navbar />
     )
 }
 

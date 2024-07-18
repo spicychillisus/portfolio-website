@@ -2,13 +2,12 @@
 import { DM_Sans, Montserrat, JetBrains_Mono, Inter } from "next/font/google";
 import { TypeAnimation } from 'react-type-animation';
 import {Button, ButtonGroup} from "@nextui-org/button";
-import { CustomButton } from "../general/buttons/buttons";
 
 // font declaration
 const DMSansFont = DM_Sans({ weight: '500', subsets: ["latin"] });
 const MontserratFont = Montserrat({ weight: '700', subsets: ["latin"] });
 const jetBrains = JetBrains_Mono({ weight: '500', subsets: ["latin"] });
-const InterFont = Inter({ weight: '500', subsets: ["latin"] });
+//const InterFont = Inter({ weight: '500', subsets: ["latin"] });
 
 const leftArrow = ">>" + "";
 const rightArrow = "<<" + "";
@@ -19,14 +18,14 @@ const HeroSection = () => {
     return (
         <section className="pt-28">
             <div className="flex justify-center">
-                <h1 className={`${MontserratFont.className} font-bold text-5xl text-weird-brown`}>
+                <h1 className={`${MontserratFont.className} font-bold text-6xl text-weird-brown`}>
                     Who am I?
                 </h1>
                 
             </div>
-            <span className={`${jetBrains.className} flex justify-center text-yes-grey`}>
+            <span className={`${jetBrains.className} flex justify-center text-yes-grey ${fontSize}`}>
                 {leftArrow}
-                <span>
+                <span className="px-2">
                     I am a <TypeAnimation sequence={[
                         'programmer',
                         1000, 
@@ -43,6 +42,12 @@ const HeroSection = () => {
                 </span>
                 {rightArrow}
             </span>
+            <div className="pt-2">
+                <span className={`flex justify-center text-black text-lg font-medium ${DMSansFont.className}`}>
+                    Get to know me!
+                </span>
+            </div>
+            
         </section>
     )
 }
