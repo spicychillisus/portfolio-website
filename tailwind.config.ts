@@ -18,6 +18,10 @@ const config: Config = {
       },
       
     },
+    colors: {
+      "weird-brown": "#c88e6d",
+      "yes-grey": "#515151"
+    }
   },
   plugins: [nextui()],
 };

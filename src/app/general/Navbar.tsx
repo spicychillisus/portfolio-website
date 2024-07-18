@@ -11,6 +11,7 @@ const InterFont = Inter({ weight: '500', subsets: ["latin"] });
 const navbarBackground = "h-full w-full bg-white-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100"
 const centerClass = "flex justify-center items-center";
 
+
 const Navbar = () => {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -27,18 +28,23 @@ const Navbar = () => {
                         <div className="sm:flex">
                             <ul className='hidden sm:flex lowercase'>
                                 <li className='pr-6'>
+                                    <Link href={"/about-me"}>
+                                        <span className='hover:underline'>About Me</span>
+                                    </Link>
+                                </li>
+                                <li className='pr-6'>
                                     <Link href={"/gallery"}>
-                                        <span>Gallery</span>
+                                        <span className='hover:underline'>Gallery</span>
                                     </Link>
                                 </li>
                                 <li className='pr-6'>
                                     <Link href={"/projects"}>
-                                        <span>Projects</span>
+                                        <span className='hover:underline'>Projects</span>
                                     </Link>
                                 </li>
                                 <li className='pr-6'>
                                     <Link href={"/contact"}>
-                                        <span>Socials</span>
+                                        <span className='hover:underline'>Socials</span>
                                     </Link>
                                 </li>
                             </ul>
