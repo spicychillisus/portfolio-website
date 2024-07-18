@@ -1,7 +1,7 @@
 "use client"
 import { DM_Sans, Montserrat, JetBrains_Mono, Inter } from "next/font/google";
 import { TypeAnimation } from 'react-type-animation';
-import {Button, ButtonGroup} from "@nextui-org/button";
+import {Button, ButtonGroup} from "@nextui-org/react";
 
 // font declaration
 const DMSansFont = DM_Sans({ weight: '500', subsets: ["latin"] });
@@ -46,6 +46,14 @@ const HeroSection = () => {
                 <span className={`flex justify-center text-black text-lg font-medium ${DMSansFont.className}`}>
                     Get to know me!
                 </span>
+            </div>
+            <div className="flex justify-center pt-2">
+                <ButtonGroup className="px-2">
+                    <Button>Projects</Button>
+                </ButtonGroup>
+                <ButtonGroup>
+                    <Button>Socials</Button>
+                </ButtonGroup>
             </div>
             
         </section>
