@@ -22,7 +22,8 @@ const config: Config = {
       "weird-brown": "#c88e6d",
       "yes-grey": "#515151",
       "black": "#000000",
-      "lightest-grey-ever": "#d9d9d9"
+      "lightest-grey-ever": "#d9d9d9",
+      "border-brown": "#B7A194"
     }
   },
   plugins: [nextui()],

@@ -11,5 +11,5 @@ let months = [
     'October',
     'November',
     'December'
-    ];
+];
 export default months;
