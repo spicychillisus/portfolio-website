@@ -1,4 +1,13 @@
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
+import {  
+    Navbar,  
+    NavbarBrand,   
+    NavbarContent,   
+    NavbarItem,   
+    NavbarMenuToggle,  
+    NavbarMenu,  
+    NavbarMenuItem
+} from "@nextui-org/react";
+import React from "react";
 
 const Footer = () => {
     return (

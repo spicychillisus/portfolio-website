@@ -2,6 +2,7 @@
 import { DM_Sans, Montserrat, JetBrains_Mono, Inter } from "next/font/google";
 import { TypeAnimation } from 'react-type-animation';
 import {Button, ButtonGroup} from "@nextui-org/react";
+import Link from "next/link";
 
 // font declaration
 const DMSansFont = DM_Sans({ weight: '500', subsets: ["latin"] });
@@ -16,7 +17,7 @@ const fontSize = '1em';
 
 const HeroSection = () => {
     return (
-        <section className="pt-28">
+        <section className="py-28">
             <div className="flex justify-center">
                 <h1 className={`${MontserratFont.className} font-bold text-6xl text-weird-brown`}>
                     Who am I?
@@ -49,10 +50,18 @@ const HeroSection = () => {
             </div>
             <div className="flex justify-center pt-2">
                 <ButtonGroup className="px-2">
-                    <Button>Projects</Button>
+                    <Button>
+                        <Link href={"/projects"}>
+                            Projects
+                        </Link>
+                    </Button>
                 </ButtonGroup>
                 <ButtonGroup>
-                    <Button>Socials</Button>
+                    <Button>
+                        <Link href={"/contact"}>
+                        Socials
+                        </Link>
+                    </Button>
                 </ButtonGroup>
             </div>
             
