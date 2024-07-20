@@ -6,7 +6,6 @@ import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import Link from "next/link";
 import { InterFont, MontserratFont, DM_SansFont } from "./componentFonts";
 
-
 type ProjectDisplayProps = {
     tittle: string;
 };
@@ -23,11 +22,24 @@ const dateFormat = new Intl.DateTimeFormat(
 const formattedDate = dateFormat.format(date);
 console.log(formattedDate); // for testing purposes
 
-const ProjectDisplay: React.FC<ProjectDisplayProps> = ({tittle }) => {
+const ProjectDisplay: React.FC<ProjectDisplayProps> = ({tittle}) => {
     return (
         <div className="bg-lightest-grey-ever border-border-brown">
-            <div>
-                <h1 className=""></h1>
+            {/* status icon */}
+            <div className="flex justify-items-end">
+
+            </div>
+            {/* main */}
+            <h1 className={`${MontserratFont.className} text-black font-bold`}>
+                {tittle}
+            </h1>
+            <div className="flex justify-center">
+                <span className={`${InterFont.className}`}>
+                    Created On: {formattedDate}
+                </span>
+                <span className={`${InterFont.className}`}>
+                    Updated On: {formattedDate}
+                </span>
             </div>
         </div>
     );
