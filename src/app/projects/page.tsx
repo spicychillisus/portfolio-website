@@ -4,7 +4,8 @@ import ProjectDisplay from "./components/Display"
 
 const Projects = () => {
     return (
-        <>
-        </>
+        <h1>hi</h1>
     )
 }
+
+export default Projects;
