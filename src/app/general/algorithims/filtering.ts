@@ -1,9 +1,8 @@
 // filter algorithim for project filter
-
+// this is for the dropdown filter button
 /**
  * 
  * @param projects 
- * @param filterType 
  * 
  * the projects variable is an array of objects that contain:
  * - title
@@ -12,6 +11,8 @@
  * - created on date
  * - updated on date
  * users can filter out based on the above mentioned (this is what the filterType variable is for)
+ * 
+ * @param filterType 
  * 
  * by default, the projects are displayed in the order they were created
  * 
@@ -72,7 +73,8 @@ export function projectsFilter(projects: Array<any>, filterType: String) {
             return (
                 projects.sort((a, b) => new Date(a.createdOn).getTime() - new Date(b.createdOn).getTime())
             )
-        // end of created on date filter
+        // end of created on/updated on date filter
+
         default:
             return projects;
 
