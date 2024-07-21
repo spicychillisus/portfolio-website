@@ -1,7 +1,7 @@
 import Navbar from "../general/Navbar"
 import Footer from "../general/Footer"
 import ProjectDisplay from "./components/Display"
-import { InterFont, MontserratFont, DM_SansFont } from "./components/componentFonts";
+import { InterFont, MontserratFont, DM_SansFont } from "../general/componentFonts";
 import HeroSection from "./components/heroSection";
 
 const Projects = () => {

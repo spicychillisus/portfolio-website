@@ -18,7 +18,7 @@ export default function Home() {
     <main className="bg-home-background">
       <Navbar />
       <HeroSection />
-
+      <Footer />
     </main>
   );
 }
