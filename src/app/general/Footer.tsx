@@ -1,18 +1,13 @@
-import {  
-    Navbar,  
-    NavbarBrand,   
-    NavbarContent,   
-    NavbarItem,   
-    NavbarMenuToggle,  
-    NavbarMenu,  
-    NavbarMenuItem
-} from "@nextui-org/react";
+
 import React from "react";
+import * as fonts from "../general/componentFonts";
+
+const line = "-----------------"
 
 const Footer = () => {
     return (
-        <footer className="">
-            
+        <footer className="flex justify-center">
+            <h1>footer</h1>
         </footer>
     )
 }

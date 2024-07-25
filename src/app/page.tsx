@@ -8,6 +8,7 @@ import { metadata } from "./layout";
 import Navbar from "./general/Navbar";
 import Footer from "./general/Footer";
 import HeroSection from "./home/HeroSection";
+import AboutMe from "./home/aboutMe";
 
 export default function Home() {
   metadata.title = "home"; // tittle
@@ -18,6 +19,7 @@ export default function Home() {
     <main className="bg-home-background">
       <Navbar />
       <HeroSection />
+      <AboutMe />
       <Footer />
     </main>
   );

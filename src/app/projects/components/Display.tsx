@@ -1,15 +1,23 @@
 // project component display
 import { SiTypescript, SiVisualstudiocode } from "react-icons/si";
 import { IoLogoJavascript, IoLogoHtml5 } from "react-icons/io5";
-import { FaCss3Alt, FaReact, FaNodeJs } from "react-icons/fa";
+import { FaCss3Alt, FaReact, FaNodeJs} from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { VscCircleSmallFilled } from "react-icons/vsc";
 import Link from "next/link";
-import Image from "next/image";
-//import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { InterFont, MontserratFont, DM_SansFont } from "../../general/componentFonts";
-import { projects } from "../projects";
+import { projects } from "./projects";
+import { languages } from "./languages";
 
-const date = new Date();
+interface ProjectDisplayProps  {
+    title: string;
+    imageLink: string;
+    desc: string;
+    status: string;
+};
+
+const date = new Date();    
 const dateFormat = new Intl.DateTimeFormat(
     'en',
     {
@@ -21,25 +29,29 @@ const dateFormat = new Intl.DateTimeFormat(
 const formattedDate = dateFormat.format(date);
 console.log(formattedDate); // for testing purposes
 
-const ProjectDisplay = (tittle: string, imageLink: string) => {
+
+
+
+const ProjectDisplay = ({title, imageLink, desc}: ProjectDisplayProps) => {
+    // imageLink will be used as the background. for now, it will be a placeholder
     return (
         <div className="bg-lightest-grey-ever border-border-brown rounded-2xl">
-            <div className="relative text-center">
-                <Image 
-                src={imageLink}
-                alt="project" 
-                />
-                <div className="w-full absolute top-0 left-0 text-center mt-10">
-                    <h2 className="text-4xl font-bold text-red-500 text-center">
-                        TailwindCSS + React
-                    </h2>
-                    <button className="mt-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                        Test Button
-                    </button>
+            <div className="pl-4">
+                <div>
+                    <h2 className={`text-black ${MontserratFont.className} text-3xl`}>{title}</h2>
+                    <span className={`text-black ${DM_SansFont.className}`}>{desc}</span>
+                </div>
+                <div>
+                    <span className={`${InterFont.className} text-black text-base`}>
+                        {`Created On: ${formattedDate}`}
+                    </span>
+
                 </div>
             </div>
+            
         </div>
     );
 };
 
 export default ProjectDisplay;
+
