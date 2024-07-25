@@ -19,7 +19,7 @@ const HeroSection = () => {
                 </div>
                 <div>
                     <span className={`${DM_SansFont.className} font-medium text-left flex justify-center`}>
-                        View All Projects at
+                        {"View All Projects at: " + " "}
                         <a href="https://github.com/spicychillisus">
                             https://github.com/spicychillisus
                         </a>

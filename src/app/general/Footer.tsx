@@ -2,12 +2,12 @@
 import React from "react";
 import * as fonts from "../general/componentFonts";
 
-const line = "-----------------"
-
 const Footer = () => {
     return (
-        <footer className="flex justify-center">
-            <h1>footer</h1>
+        <footer className="flex justify-center pt-12">
+            <span className={`${fonts.DM_SansFont.className} font-light`}>
+                Developed and Designed by Asher Reyes © 2024
+            </span>
         </footer>
     )
 }

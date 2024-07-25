@@ -1,5 +1,6 @@
 # Portfolio Website
 This README.md will bring you through the documentation of the technologies used in this project.
+* This website is best viewed on Desktop. Mobile Viewing is still in development.
 
 # Built With
 - Next.js
@@ -52,10 +53,6 @@ This component serves as a navigation bar for users to navigate their way throug
 
 # Projects Page
 
-# Socials Page
-Originally named "Contact Me", it was renamed to Socials as per recommendation by a friend.
-This page contains a form for any potential stakeholders or clients to reach out to me. 
 
-## Technologies Used
-- MySQL 
-- 
+
+

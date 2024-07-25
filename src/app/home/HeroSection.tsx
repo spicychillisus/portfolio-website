@@ -1,7 +1,8 @@
 "use client"
 import { DM_Sans, Montserrat, JetBrains_Mono, Inter } from "next/font/google";
 import { TypeAnimation } from 'react-type-animation';
-import {Button, ButtonGroup} from "@nextui-org/react";
+import {Button, ButtonGroup, Dropdown, DropdownTrigger, DropdownMenu, DropdownItem} from "@nextui-org/react";
+import { useState } from "react";
 import Link from "next/link";
 
 // font declaration
@@ -58,8 +59,8 @@ const HeroSection = () => {
                 </ButtonGroup>
                 <ButtonGroup>
                     <Button>
-                        <Link href={"/contact"}>
-                        Socials
+                        <Link href={"/experience"}>
+                        Experiences
                         </Link>
                     </Button>
                 </ButtonGroup>

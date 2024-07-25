@@ -28,13 +28,8 @@ const Navbar = () => {
                         <div className="sm:flex">
                             <ul className='hidden sm:flex lowercase'>
                                 <li className='pr-6'>
-                                    <Link href={"/about-me"}>
-                                        <span className='hover:underline'>About Me</span>
-                                    </Link>
-                                </li>
-                                <li className='pr-6'>
-                                    <Link href={"/gallery"}>
-                                        <span className='hover:underline'>Gallery</span>
+                                    <Link href={"/experience"}>
+                                        <span className='hover:underline'>experiences</span>
                                     </Link>
                                 </li>
                                 <li className='pr-6'>
@@ -44,7 +39,7 @@ const Navbar = () => {
                                 </li>
                                 <li className='pr-6'>
                                     <Link href={"/contact"}>
-                                        <span className='hover:underline'>Socials</span>
+                                        <span className='hover:underline'>contact me</span>
                                     </Link>
                                 </li>
                             </ul>
@@ -73,14 +68,14 @@ const Navbar = () => {
                     </div>
                     <div className={isOpen ? "block" : "hidden"}>
                         <div className='text-center md:lg:hidden'>
-                            <Link href={"/gallery"}>
-                                <li className='lowercase list-none hover:underline'>gallery</li>
+                            <Link href={"/experience"}>
+                                <li className='lowercase list-none hover:underline'>expereinces</li>
                             </Link>
                             <Link href={"/projects"}>
                                 <li className='lowercase list-none pt-1'>projects</li>
                             </Link>
                             <Link href={"/contact"}>
-                                <li className='lowercase list-none pt-1'>socials</li>
+                                <li className='lowercase list-none pt-1'>contact me</li>
                             </Link>
                         </div>
                     </div>
