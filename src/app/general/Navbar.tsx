@@ -38,8 +38,8 @@ const Navbar = () => {
                                     </Link>
                                 </li>
                                 <li className='pr-6'>
-                                    <Link href={"/contact"}>
-                                        <span className='hover:underline'>contact me</span>
+                                    <Link href={"/education"}>
+                                        <span className='hover:underline'>education</span>
                                     </Link>
                                 </li>
                             </ul>
@@ -74,8 +74,8 @@ const Navbar = () => {
                             <Link href={"/projects"}>
                                 <li className='lowercase list-none pt-1'>projects</li>
                             </Link>
-                            <Link href={"/contact"}>
-                                <li className='lowercase list-none pt-1'>contact me</li>
+                            <Link href={"/education"}>
+                                <li className='lowercase list-none pt-1'>education</li>
                             </Link>
                         </div>
                     </div>
