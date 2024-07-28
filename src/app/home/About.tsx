@@ -1,7 +1,6 @@
 import * as fonts from "../general/componentFonts";
 import { IoLogoInstagram } from "react-icons/io";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
 
 import Link from "next/link";
 
