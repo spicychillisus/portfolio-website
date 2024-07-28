@@ -5,7 +5,6 @@ import { MdEmail } from "react-icons/md";
 
 import Link from "next/link";
 
-const iconSize = 40;
 const moveUpHover = "ml-3 hover:translate-y-[-2px] transition-transform duration-300"
 const spacing = "px-1"
 
@@ -17,7 +16,7 @@ const About = () => {
             </h2>
             <p className="text-center px-36 text-black">
                 Hello! My name is Asher, an aspiring software developer from Singapore with a passion to learn new things and meet new people.
-                Everyday I always look forward to facing new challenges and solving problems. 
+                Everyday I always look forward to facing new challenges and solving problems, so I'm always excited to what tomorrow brings for me.
                 Currently I am a student in Singapore Polytechnic pursuing a Diploma in Information Technology, but that doesn't stop me from learning new things on my own.
             </p>
             <br />
@@ -39,11 +38,6 @@ const About = () => {
                     <li className={spacing}>
                         <Link href={"https://www.linkedin.com/in/asher-reyes/"}>
                             <FaLinkedin size={35} className={moveUpHover} color="#0072b1"/>
-                        </Link>
-                    </li>
-                    <li className={spacing}>
-                        <Link href={"https://www.linkedin.com/in/asher-reyes/"}>
-                            <MdEmail size={35} className={moveUpHover} color="#ffffff"/>
                         </Link>
                     </li>
                 </ul>

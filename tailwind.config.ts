@@ -1,4 +1,4 @@
-import {nextui} from '@nextui-org/theme';
+import { nextui } from '@nextui-org/theme';
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -16,18 +16,27 @@ const config: Config = {
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "home-background": "linear-gradient(180deg, rgba(213,189,175,1) 4%, rgba(214,204,194,1) 34%, rgba(191,191,191,1) 80%);"
       },
-      
-    },
-    colors: {
-      "weird-brown": "#c88e6d",
-      "yes-grey": "#515151",
-      "black": "#000000",
-      "lightest-grey-ever": "#d9d9d9",
-      "border-brown": "#B7A194",
-      "completed": "#008E1F",
-      "in-progress": "#8E0000"
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" }
+        }
+      },
+      animation: {
+        fadeIn: "fadeIn 1s ease-in-out"  
+      },
+      colors: {
+        "weird-brown": "#c88e6d",
+        "yes-grey": "#515151",
+        "black": "#000000",
+        "lightest-grey-ever": "#d9d9d9",
+        "border-brown": "#B7A194",
+        "completed": "#008E1F",
+        "in-progress": "#8E0000"
+      }
     }
   },
   plugins: [nextui()],
 };
+
 export default config;

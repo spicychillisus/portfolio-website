@@ -20,7 +20,7 @@ const HeroSection = () => {
     return (
         <section className="py-28">
             <div className="flex justify-center">
-                <h1 className={`${MontserratFont.className} font-bold text-6xl text-weird-brown`}>
+                <h1 className={`${MontserratFont.className} font-bold text-6xl text-weird-brown animate-fadeIn`}>
                     Who am I?
                 </h1>
                 

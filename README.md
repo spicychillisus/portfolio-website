@@ -1,6 +1,7 @@
 # Portfolio Website
 This README.md will bring you through the documentation of the technologies used in this project.
 * This website is best viewed on Desktop. Mobile Viewing is still in development.
+* This project is still currently in development 😅 Please be patient as I try and make this website as pleasing as possible 😁
 
 # Built With
 - Next.js
@@ -8,7 +9,9 @@ This README.md will bring you through the documentation of the technologies used
 - TailwindCss
 - Vercel (deployed on)
 
-# Installation
+Link to deployed website: https://bit.ly/spicychillisus
+
+# Installation (If you wish to see the source files)
 
 1. To access the contents in this website, run this command:
 ```
@@ -31,27 +34,45 @@ Click the links below to navigate to the documentation you wish to view
 - [Navbar](#navbar)
 - [Footer](#footer)
 - [Home Page](#home-page)
-- [Gallery](#gallery-page)
-- [Projects](#projects-page)
-- [Socials](#socials-page)
+- [Experiences](#experiences-page)
+- [Projects]((#projects-page))
+- [Education](#education-page)
 
 
 # Navbar
 This component serves as a navigation bar for users to navigate their way through the page with ease. It brings the user to links such as:
 - Home Page (the link on the left)
-- Gallery page
-- Projects page
-- Socials page
+- Experience Page 
+- Projects Page
+- Education Page
 
-### Technologies Used:
-- A hover feature was used on the links to give it an underline effect when the cursor runs over them
-# Footer
+The following modules are imported to bring in the required icons and fonts used for this Navbar:
+```
+import Link from 'next/link';
+import { useState } from 'react';
+import { Inter } from 'next/font/google';
+import { FiMenu } from "react-icons/fi";
+import { RxCross1 } from "react-icons/rx";
+```
+
+When using useState, since it is a server-side component, it is important to put the following at the top of the page:
+```
+"use client"
+```
+
+This tells react that the component is being used on the client side.
+
+The usage of use client is for the mobile menu.
 
 # Home Page
 
-# Gallery Page
+# Experiences Page
 
 # Projects Page
+
+# Education Page
+
+# Footer
 
 
 
