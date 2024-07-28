@@ -14,9 +14,9 @@ const About = () => {
                 About Me
             </h2>
             <p className="text-center px-36 text-black">
-                Hello! My name is Asher, an aspiring software developer from Singapore with a passion to learn new things and meet new people.
-                Everyday I always look forward to facing new challenges and solving problems, so I'm always excited to what tomorrow brings for me.
-                Currently I am a student in Singapore Polytechnic pursuing a Diploma in Information Technology, but that doesn't stop me from learning new things on my own.
+            Hello! My name is Asher, an aspiring software developer from Singapore with a passion to learn new things and meet new people.
+                Everyday I always look forward to facing new challenges and solving problems, so I&apos;m always excited to what tomorrow brings for me.
+                Currently I am a student in Singapore Polytechnic pursuing a Diploma in Information Technology, but that doesn&apos;t stop me from learning new things on my own.
             </p>
             <br />
             <p className="text-center text-black">

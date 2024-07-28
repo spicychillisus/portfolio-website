@@ -81,8 +81,7 @@ const DisplayLanguages = () => {
                 Programming Languages
             </h2>
             <p className="px-60 text-black text-center">
-                Over my course of study, I've learned a few programming softwares to further enhance my ability to create and deploy technological solutions
-                and develop advanced software applications. Here are a few of the programming languages I've learned and used.
+                Over my course of study, I&apos;ve learned a few programming softwares to further enhance my ability to create and deploy technological solutions and develop advanced software applications. Here are a few of the programming languages I&apos;ve learned and used.
             </p>
             <div className="flex justify-center pt-4">
                 <div className="grid grid-cols-3 gap-4 place-items-center">
