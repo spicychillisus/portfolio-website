@@ -12,17 +12,16 @@ const ProjectDisplay = () => {
                 Some of my past, current and work in progress projects
             </p>
             <div className="grid lg:grid-cols-2 md:grid-cols-3 gap-4 mt-2 pt-2 px-4 pb-4">
-                    {projects.map((project) => (
-                        <Project
-                            //key={project.name}
-                            tittle={project.name}
-                            description={project.description}
-                            link={project.link}
-                            status={project.status}
-                        />
-                    ))
-                    }
-                </div>
+                {projects.map((project) => (
+                    <Project
+                        key={project.name}  // Add the key prop here
+                        tittle={project.name}
+                        description={project.description}
+                        link={project.link}
+                        status={project.status}
+                    />
+                ))}
+            </div>
         </main>
     )
 }

@@ -1,9 +1,8 @@
-// component
-import {Button, ButtonGroup} from "@nextui-org/button";
-import * as fonts from "../general/componentFonts";
+import { Button, ButtonGroup } from '@nextui-org/react';
+import React from 'react';
+
 
 interface ProjectProps {
-    // icon: string; // will use if needed
     tittle: string;
     description: string;
     link: string;
@@ -11,19 +10,15 @@ interface ProjectProps {
     languages?: string[];
 }
 
-
-const Project = ({
-    tittle, description, link, status, languages
-}: ProjectProps) => {
+const Project: React.FC<ProjectProps> = ({ tittle, description, link, status, languages }) => {
     return (
         <section>
-            
             <div className="bg-gray-800 rounded-2xl pl-2 pr-2">
                 <h3 className="font-bold text-xl text-center pt-2">
                     {tittle}
                 </h3>
                 <p className="text-center font-normal text-sm">
-                {description}
+                    {description}
                 </p>
                 <p className="text-center text-base font-normal">
                     <a href={link}>
@@ -32,10 +27,8 @@ const Project = ({
                                 <Button>View</Button>
                             </ButtonGroup>
                         </div>
-                        
                     </a>
                 </p>
-                
                 <p className="text-center text-base font-normal pt-2 pl-2">
                     Status: {
                         status === "Completed" ? (
@@ -47,14 +40,12 @@ const Project = ({
                                 {status}
                             </span>
                         )
-                        
                     }
                 </p>
-                
                 <p>
                     {
-                        languages?.map((language) => (
-                            <span className="text-center text-base font-normal pl-2">
+                        languages?.map((language, index) => (
+                            <span key={index} className="text-center text-base font-normal pl-2">
                                 {language}
                             </span>
                         ))
@@ -62,8 +53,7 @@ const Project = ({
                 </p>
             </div>
         </section>
-    )
-    
+    );
 }
 
 export default Project;
