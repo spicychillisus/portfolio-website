@@ -80,7 +80,7 @@ const DisplayLanguages = () => {
             <h2 className={`${fonts.MontserratFont.className} text-weird-brown text-center text-3xl font-bold`}>
                 Programming Languages
             </h2>
-            <p className="px-60 text-black text-center">
+            <p className="md:lg:px-60 text-black text-center">
                 Over my course of study, I&apos;ve learned a few programming softwares to further enhance my ability to create and deploy technological solutions and develop advanced software applications. Here are a few of the programming languages I&apos;ve learned and used.
             </p>
             <div className="flex justify-center pt-4">

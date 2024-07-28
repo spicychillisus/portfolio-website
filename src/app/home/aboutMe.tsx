@@ -5,13 +5,14 @@
 
 import DisplayLanguages from "./DisplayLanguages";
 import About from "./About";
-
+import ProjectDisplay from "./ProjectDisplay";
 
 const AboutMe = () => {
     return (
         <>
         <About />
         <DisplayLanguages />
+        <ProjectDisplay />
         </>
     )
 }
