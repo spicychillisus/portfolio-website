@@ -11,7 +11,7 @@ const ProjectDisplay = () => {
             <p className="md:lg:px-60 text-black text-center">
                 Some of my past, current and work in progress projects
             </p>
-            <div className="grid lg:grid-cols-2 md:grid-cols-3 gap-4 mt-2 pt-2 px-4 pb-4">
+            <div className="grid lg:grid-cols-2 md:grid-cols-3 gap-4 mt-2 pt-2 px-28 pb-4">
                 {projects.map((project) => (
                     <Project
                         key={project.name}  // Add the key prop here

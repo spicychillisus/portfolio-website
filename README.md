@@ -62,8 +62,6 @@ When using useState, since it is a server-side component, it is important to put
 
 This tells react that the component is being used on the client side.
 
-The usage of use client is for the mobile menu.
-
 # Home Page
 
 # Experiences Page

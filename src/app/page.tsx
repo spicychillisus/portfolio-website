@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main className="bg-home-background">
       {/* for temporary purposes,  the navbar will not be displayed */}
-      {/* <Navbar /> */}
+      <Navbar />
       <HeroSection />
       <AboutMe />
       <Footer />

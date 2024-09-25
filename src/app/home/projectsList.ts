@@ -19,5 +19,12 @@ export const projects = [
         description: "This website site was a full-stack project for school that gamifies sustainability tasks. Players can complete tasks and earn points and use those points to purchase vehicles.",
         link: "https://github.com/spicychillisus/bed-ca2-public",
         status: "Completed"
-    }
+    },
+    {
+        image: "",
+        name: "Expenses Tracker",
+        description: "Currently in planning, this project is a full-stack expenses tracker that allows users to track their expenses and income. This project has not started yet.",
+        link: "https://github.com/spicychillisus/fed-ca1-dcitp",
+        status: "Work In Progress"
+    },
 ]
