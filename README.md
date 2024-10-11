@@ -29,48 +29,7 @@ npm run dev
 ```
 The project will by default run on port 3000, or any port available.
 
-# Main Menu
-Click the links below to navigate to the documentation you wish to view
-- [Navbar](#navbar)
-- [Footer](#footer)
-- [Home Page](#home-page)
-- [Experiences](#experiences-page)
-- [Projects]((#projects-page))
-- [Education](#education-page)
 
-
-# Navbar
-This component serves as a navigation bar for users to navigate their way through the page with ease. It brings the user to links such as:
-- Home Page (the link on the left)
-- Experience Page 
-- Projects Page
-- Education Page
-
-The following modules are imported to bring in the required icons and fonts used for this Navbar:
-```
-import Link from 'next/link';
-import { useState } from 'react';
-import { Inter } from 'next/font/google';
-import { FiMenu } from "react-icons/fi";
-import { RxCross1 } from "react-icons/rx";
-```
-
-When using useState, since it is a server-side component, it is important to put the following at the top of the page:
-```
-"use client"
-```
-
-This tells react that the component is being used on the client side.
-
-# Home Page
-
-# Experiences Page
-
-# Projects Page
-
-# Education Page
-
-# Footer
 
 
 
