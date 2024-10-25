@@ -10,7 +10,7 @@ metadata.title = "Projects";
 let imageLink = "./images/portfolio-web.png"; // test
 const Projects = () => {
     return (
-        <main className="bg-home-background">
+        <main className="bg-home-background min-h-screen">
             <Navbar />
             <HeroSection />
             <Footer />

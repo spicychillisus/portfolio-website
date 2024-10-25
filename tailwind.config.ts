@@ -32,7 +32,8 @@ const config: Config = {
         "lightest-grey-ever": "#d9d9d9",
         "border-brown": "#B7A194",
         "completed": "#008E1F",
-        "in-progress": "#8E0000"
+        "in-progress": "#8E0000",
+        "project-border": "#B7A194"
       }
     }
   },

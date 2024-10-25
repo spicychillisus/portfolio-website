@@ -1,4 +1,4 @@
-import * as fonts from "../general/componentFonts";
+import * as fonts from "../../general/componentFonts";
 import { IoLogoInstagram } from "react-icons/io";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -10,11 +10,11 @@ const spacing = "px-1"
 const About = () => {
     return (
         <div className="pb-28">
-            <h2 className={`${fonts.MontserratFont.className} text-center text-weird-brown text-4xl`}>
+            <h2 className={`${fonts.MontserratFont.className} text-center text-weird-brown text-4xl font-bold`}>
                 About Me
             </h2>
             <p className="text-center px-36 text-black">
-            Hello! My name is Asher, an aspiring software developer from Singapore with a passion to learn new things and meet new people.
+                Hello! My name is Asher, an aspiring software developer from Singapore with a passion to learn new things and meet new people.
                 Everyday I always look forward to facing new challenges and solving problems, so I&apos;m always excited to what tomorrow brings for me.
                 Currently I am a student in Singapore Polytechnic pursuing a Diploma in Information Technology, but that doesn&apos;t stop me from learning new things on my own.
             </p>

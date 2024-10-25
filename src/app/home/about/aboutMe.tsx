@@ -3,16 +3,16 @@
 * For the about me page with the long paragraphs and my stories, head over to the about-me folder.
 */
 
-import DisplayLanguages from "./DisplayLanguages";
+import DisplayLanguages from "../display/DisplayLanguages";
 import About from "./About";
-import ProjectDisplay from "./ProjectDisplay";
+import ProjectHero from "../project/HeroSection";
 
 const AboutMe = () => {
     return (
         <>
         <About />
         <DisplayLanguages />
-        <ProjectDisplay />
+        <ProjectHero />
         </>
     )
 }

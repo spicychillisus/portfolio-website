@@ -2,7 +2,7 @@ import { SiTypescript } from "react-icons/si";
 import { IoLogoJavascript, IoLogoHtml5 } from "react-icons/io5";
 import { FaCss3Alt, FaReact, FaNodeJs, FaJava} from "react-icons/fa";
 import { FaPython } from "react-icons/fa6";
-import * as fonts from "../general/componentFonts";
+import * as fonts from "../../general/componentFonts";
 
 interface LanguageProps {
     name: string;

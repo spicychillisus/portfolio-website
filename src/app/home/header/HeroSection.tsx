@@ -50,6 +50,13 @@ const HeroSection = () => {
                 </span>
             </div>
             <div className="flex justify-center pt-2">
+            <ButtonGroup className="px-2">
+                    <Button>
+                        <Link href={"/projects"}>
+                            About Me
+                        </Link>
+                    </Button>
+                </ButtonGroup>
                 <ButtonGroup className="px-2">
                     <Button>
                         <Link href={"/projects"}>
