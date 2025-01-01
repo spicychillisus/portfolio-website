@@ -9,8 +9,6 @@ This README.md will bring you through the documentation of the technologies used
 - TailwindCss
 - Vercel (deployed on)
 
-Link to deployed website: https://bit.ly/spicychillisus
-
 # Installation (If you wish to see the source files)
 
 1. To access the contents in this website, run this command:
