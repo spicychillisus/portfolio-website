@@ -7,6 +7,7 @@
 
 import { metadata } from "./layout";
 import Start from "./Starter";
+import MainPage from "./Home";
 
 export default function Home() {
   metadata.title = "home"; // tittle
@@ -15,7 +16,8 @@ export default function Home() {
   // displayed on website
   return (
     <main className="bg-home-background w-screen min-h-screen overflow-hidden">
-      <Start />
+      {/* <Start /> */}
+      <MainPage />
     </main>
   );
 }

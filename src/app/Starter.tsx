@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
-import { montserrat, montserrat500, montserrat600, montserrat700 } from "@/fonts";
+import { 
+    montserrat, montserrat500, montserrat600, montserrat700 
+} from "@/fonts";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import MainPage from "./Home";

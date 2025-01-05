@@ -1,2 +1,3 @@
 import Navbar from "./Navbar";
-export { Navbar };
+import Typewriter from "./Typewriter";
+export { Navbar, Typewriter };
