@@ -8,6 +8,7 @@ This README.md will bring you through the documentation of the technologies used
 - Node.js
 - TailwindCss
 - Vercel (deployed on)
+- framer-motion
 
 # Installation (If you wish to see the source files)
 

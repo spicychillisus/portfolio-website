@@ -4,9 +4,12 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { montserrat500, montserrat600, montserrat700, JetBrains, DMSans500, DMSans } from "@/fonts";
 import { TypeAnimation } from 'react-type-animation';
-import { Navbar } from "@/components/spicy";
+import { Navbar, Projects } from "@/components/spicy";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import Link from "next/link";
+import { Tooltip } from "@/components/ui/tooltip";
+
+const socialLinks = [];
 
 export default function MainPage() {
 
@@ -56,7 +59,7 @@ export default function MainPage() {
                     </span>
                 </motion.div> 
                 <motion.div
-                className="my-16"
+                className="my-14"
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 2.4 }}
@@ -65,23 +68,62 @@ export default function MainPage() {
                         Contact me through:
                     </h1>
                     <div className="flex justify-center">
-                    <div className="grid grid-cols-3 gap-2">
-                        <motion.div 
-                        className="w-auto h-auto"
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        >
-                            <Button size={"lg"} className="hover:-translate-y-1">
-                                <Link href="https://www.instagram.com/whoisasher_/">
-                                    <FaInstagram size={80}/>
-                                </Link>
-                            </Button>
-                        </motion.div> 
-                        
+                        <div className="grid grid-cols-3 gap-6">
+                            <motion.div 
+                            className="w-auto h-auto"
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 10 }}
+                            transition={{ duration: 2 }}
+                            >
+                                <Link 
+                                href="https://www.instagram.com/whoisasher_/" 
+                                className="cursor-pointer select-none w-auto h-auto"
+                                >
+                                    <FaInstagram 
+                                        size={30}
+                                        color="#E1306C"
+                                    />
+                                </Link>                   
+                            </motion.div>
+                            <motion.div 
+                            className="w-auto h-auto"
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 10 }}
+                            transition={{ duration: 3 }}
+                            >
+                                <Link 
+                                href="https://www.linkedin.com/in/asher-reyes/" 
+                                className="cursor-pointer select-none w-auto h-auto"
+                                >
+                                    <FaLinkedin 
+                                        size={30}
+                                        color="#0A66C2"
+                                        className="hover:text-white"
+                                    />
+                                </Link>                   
+                            </motion.div> 
+                            <motion.div 
+                            className="w-auto h-auto"
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 10 }}
+                            transition={{ duration: 4 }}
+                            >
+                                <Link 
+                                href="https://github.com/spicychillisus" 
+                                className="cursor-pointer select-none w-auto h-auto"
+                                >
+                                    <FaGithub 
+                                        size={30}
+                                        color="#211F1F"
+                                        className="hover:text-white"
+                                    />
+                                </Link>                   
+                            </motion.div> 
+                            
+                        </div>
                     </div>
-                </div>
                 </motion.div>
-                
+                <Projects />
             </div>
         </div>
     )

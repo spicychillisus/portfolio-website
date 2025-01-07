@@ -15,7 +15,7 @@ export default function Home() {
   
   // displayed on website
   return (
-    <main className="bg-home-background w-screen min-h-screen overflow-hidden">
+    <main className="bg-home-background w-screen h-screen overflow-hidden">
       {/* <Start /> */}
       <MainPage />
     </main>

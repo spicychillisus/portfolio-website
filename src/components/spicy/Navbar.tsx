@@ -36,12 +36,11 @@ export default function Navbar() {
         }}
         >
             <div className="mx-20 my-3">
-                <nav className="h-full w-full bg-white/40 rounded-xl">
-                    <div className="grid grid-cols-4 gap-4 p-4">
+                <nav className="h-full w-full bg-white/40 rounded-xl flex justify-center">
+                    <div className="flex gap-12 p-3">
                         {links.map((link, index) => (
-                            <div className="pl-2">
+                            <div key={index} className="pl-2">
                                 <Link 
-                                key={index} 
                                 href={link.href}
                                 className="select-none cursor-pointer text-weird-brown font-semibold text-lg hover:underline hover:text-weird-brown/80"
                                 >

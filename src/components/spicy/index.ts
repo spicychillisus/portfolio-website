@@ -1,3 +1,4 @@
 import Navbar from "./Navbar";
 import Typewriter from "./Typewriter";
-export { Navbar, Typewriter };
+import Projects from "./Projects";
+export { Navbar, Typewriter, Projects };
